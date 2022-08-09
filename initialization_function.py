@@ -19,14 +19,30 @@ def init():
     if help_input == "help":
         help_txt = """  
         This is the list of the program's functionalities:
-        1. Show today exchange rate - It shows the exchange rate of the current day
+        1. Show today exchange rates - It shows the exchange rate of the current day
         """
         print(help_txt)
 
 
     cmd = input("Enter a query: ")
 
-    if cmd == "Show today exchange rate":
+    if cmd == "Show today exchange rates":
         s = input("Insert source currency: ")
         c = input("Insert interested currencies (separated with a comma): ")
         func.showTodayExRate(s, c)
+
+    if cmd == "Show exchange rates from a date to today":
+        dy = input("Enter the year: ")
+        dm = input("Enter the month: ")
+        dd = input("Enter the day: ")
+        dte = dy + "-" + dm + "-" + dd
+        s = input("Insert source currency: ")
+        c = input("Insert interested currencies (separated with a comma): ")
+        func.showExRateFromASpecificDateToToday(dte, s, c)
+
+    if cmd == "Convert amount from a currency to another one":
+        ic = input("Insert initial currency: ")
+        t = "Insert amount: {curr} "
+        a = input(t.format(curr=ic))
+        fc = input("Insert final currency: ")
+        func.convertAmountFromDifferentCurrencies(ic, fc, a)
