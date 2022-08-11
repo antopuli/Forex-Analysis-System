@@ -1,0 +1,131 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    z-index: 4;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(11, 30, 82);
+}
+
+.logo_image {
+    width: 100px;
+    position: absolute;
+    left: 80px;
+    top: 50px;
+}
+
+.logo_name {
+    position: absolute;
+    top: 88px;
+    left: 180px;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-weight: 600;
+}
+
+#ln_thinword {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+}
+
+.discover_button {
+    border: solid 0.8px white;
+    border-radius: 1.8em;
+    color: white;
+    background: none;
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    position: absolute;
+    right: 120px;
+    top: 70px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    font-size: 13px;
+}
+
+
+#sec1 {
+    width: 100%;
+    height: 880px;
+}
+
+.discord_logo {
+    width: 40px;
+    position: absolute;
+    top: 250px;
+    left: 150px;
+}
+
+.dc_span {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    position: absolute;
+    top: 252px;
+    left: 150px;
+    color: rgb(81, 101, 246);
+}
+
+.s1_span {
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 80px;
+    position: absolute;
+    top: 290px;
+    left: 150px;
+    color: white;
+}
+
+.s1_ss_span {
+    color: white;
+    font-weight: 400;
+    line-height: 30px;
+    font-size: 16px;
+    position: absolute;
+    top: 470px;
+    left: 150px;
+}
+
+.s1_img {
+    width: 100%;
+    filter: opacity(80%);
+    position: absolute;
+    top: -1120px;
+    z-index: 2;
+}
+
+
+#sec2 {
+    width: 100%;
+    height: 1000px;
+    position: relative;
+    top: 20px; 
+}
+
+
+.s2_vs {
+    font-size: 80px;
+    font-weight: 100;
+    position: relative;
+    top: 500px;
+    left: 550px;
+    color: white;
+}
+
+
+
+
+
+::-webkit-scrollbar {
+    display: none;
+}
